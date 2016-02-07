@@ -44,7 +44,8 @@ a:hover{
 #quick_card{
 	padding:25px;
 	margin-top:10vh;
-	text-align:center;
+	text-align:center
+	background-color:#455A64;
 }
 #quick_card #photo{
 	height:80px;
@@ -55,13 +56,13 @@ a:hover{
 	font-weight:normal;
 	margin-top:20px;
 	font-size:19px;
-	color:#212121;
+	color:#fff;
 }
 #quick_card #description{
 	font-weight:normal;
 	margin-top:15px;
 	font-size:15px;
-	color:#616161;
+	color:#dcedc8;
 }
 #about_card{
 	position:relative;
