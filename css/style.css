@@ -132,7 +132,7 @@ hr{
 #contact_card a{
 	color:#616161;
 	text-decoration:none;
-	line-height:3; /*Change link color (ONLY Contact Card)*/
+	line-height:2.5; /*Change link color (ONLY Contact Card)*/
 }
 #contact_card a:hover{
 	color:#9E9E9E; /*Change link color (on mouse over, ONLY Contact Card) */
