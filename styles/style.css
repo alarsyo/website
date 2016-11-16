@@ -1,10 +1,10 @@
-/*  
+/*
 	* Personal Cards 1.0 by Luca Cassani *
-	
-	You can copy, modify, publish, use, sell, 
+
+	You can copy, modify, publish, use, sell,
 	or distribute this template for any purpose,
-	commercial or non-commercial, and by any means. 
-	It requires no special copyright notes nor attribution.	
+	commercial or non-commercial, and by any means.
+	It requires no special copyright notes nor attribution.
 */
 
 *{
@@ -32,6 +32,31 @@ a:hover{
 	top:0;
 	background-color:#607D8B; /* Change top background color */
 }
+
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  background: #546E7A;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.btn:hover {
+  background: #78909C;
+  text-decoration: none;
+}
+
 .card{
 	width:550px;
 	margin:0 auto;
