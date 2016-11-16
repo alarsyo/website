@@ -110,6 +110,15 @@ a:hover{
 	padding:5px 20px 5px 20px;
 	position:relative;
 }
+#about_card .tab .element .name a{
+	color: #212121;
+}
+#about_card .tab .element .info a{
+	color: #616161;
+}
+#about_card .tab .element a:hover{
+	color: #90A4AE;
+}
 #about_card .element{
 	margin-bottom:5px;
 	margin-top:5px;
