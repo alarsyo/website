@@ -35,7 +35,7 @@ a:hover{
 
 .btn {
   border-radius: 4px;
-  box-shadow: 0px 2px 5px 0px #666666;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   font-family: Courier New;
   color: #ffffff;
   font-size: 20px;
@@ -52,7 +52,7 @@ a:hover{
 
 .btn:hover {
   text-decoration: none;
-	box-shadow: 0px 5px 11px 0px #666666
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.17);
 }
 
 .card{
