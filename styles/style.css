@@ -110,6 +110,9 @@ a:hover{
 	padding:5px 20px 5px 20px;
 	position:relative;
 }
+#about_card .tab .element a{
+	text-decoration: underline;
+}
 #about_card .tab .element .name a{
 	color: #212121;
 }
