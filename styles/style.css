@@ -34,12 +34,8 @@ a:hover{
 }
 
 .btn {
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
   border-radius: 4px;
-  -webkit-box-shadow: 0px 1px 3px #666666;
-  -moz-box-shadow: 0px 1px 3px #666666;
-  box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 2px 5px 0px #666666;
   font-family: Courier New;
   color: #ffffff;
   font-size: 20px;
@@ -54,8 +50,8 @@ a:hover{
 }
 
 .btn:hover {
-  background: #78909C;
   text-decoration: none;
+	box-shadow: 0px 5px 11px 0px #666666
 }
 
 .card{
@@ -190,7 +186,7 @@ hr{
 	font-size:22px;
 }
 #fab:hover{
-	background-color:#FF8A80; /*Change FAB background color (on mouse over) */
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.16);/*Change FAB background color (on mouse over) */
 }
 
 footer{
