@@ -180,7 +180,7 @@ hr{
 	text-align:center;
 	background-color:#FF5252; /*Change FAB background color */
 	border-radius:99px;
-	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
 	transition: all ease-in-out 200ms;
 }
 #fab i{
@@ -188,7 +188,7 @@ hr{
 	font-size:22px;
 }
 #fab:hover{
-	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.16);/*Change FAB background color (on mouse over) */
+	box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.18), 0px 4px 15px 0px rgba(0, 0, 0, 0.18);/*Change FAB background color (on mouse over) */
 }
 
 footer{
