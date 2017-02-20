@@ -252,6 +252,9 @@ footer {
         top: calc(25% - 30px);
         right: calc((100% - 550px)/4 - 30px);
     }
+    .btn {
+	z-index: 10;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 960px) {
