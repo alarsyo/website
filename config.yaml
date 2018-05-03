@@ -1,0 +1,14 @@
+baseURL: "https://alarsyo.com/"
+title: "Antoine's Website"
+
+theme: my-simple-theme
+
+DefaultContentLanguage: en
+
+languages:
+  en:
+    lang: en
+    languageName: English
+    weight: 1
+
+    
