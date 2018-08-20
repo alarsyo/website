@@ -1,0 +1,4 @@
+[build]
+  command = "hugo --verbose"
+  publish = "public/"
+  environment = { HUGO_VERSION = "0.47.1" }
