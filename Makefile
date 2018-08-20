@@ -10,7 +10,8 @@ release: clean
 	hugo --verbose
 
 update-theme:
-	git submodule update --recursive --remote
+	git add themes/my-simple-theme
+	git commit -m "Update theme"
 
 clean:
 	rm -rf public/
