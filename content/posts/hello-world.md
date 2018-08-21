@@ -13,7 +13,7 @@ This is the first post on this site.
 Hopefully it gets populated with more content in the future.  In the
 meantime, I'm using this page to test CSS stuff.
 
-```
+```python3
 def hello_world():
     print('Hi there!')
 ```
