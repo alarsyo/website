@@ -14,3 +14,9 @@
   to = "https://blog.alarsyo.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://about.alarsyo.com/*"
+  to = "https://blog.alarsyo.com/about/"
+  status = 301
+  force = true
