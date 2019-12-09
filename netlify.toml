@@ -1,7 +1,7 @@
 [build]
   command = "hugo --verbose --minify"
   publish = "public/"
-  environment = { HUGO_VERSION = "0.53" }
+  environment = { HUGO_VERSION = "0.57.2" }
 
 [[redirects]]
   from = "https://alarsyo.com/*"
