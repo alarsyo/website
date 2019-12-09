@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+    <div class="container">
+    {{ range .Data.Pages }}
+        {{ if eq .Type "posts" }}
+            {{- partial "post-list-item" . -}}
+        {{ end }}
+    {{ end }}
+    </div>
+
+{{ end }}
