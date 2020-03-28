@@ -1,29 +1,29 @@
 <section class="hero is-medium">
-   <div class="hero-head">
-        <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-            <a class="navbar-item" href="/">
-                <p>alarsyo</p>
-            </a>
-            <a class="navbar-item" href="/about/">
-            About
-            </a>
-            </div>
-        </div>
-        </nav>
+  <div class="hero-head">
+    <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <p>alarsyo</p>
+      </a>
+      <a class="navbar-item" href="/about/">
+        About
+      </a>
+      </div>
     </div>
+    </nav>
+  </div>
 
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            {{ if .IsHome }}
-                <h1 class="title">{{ .Content }}</h1>
-            {{ else }}
-                <h1 class="title">{{ .Title }}</h1>
-                {{ if eq .Type "posts" }}
-                    <h3 class="subtitle">{{ .Date.Format "Monday, January 2, 2006" }}</h3>
-                {{ end }}
-            {{ end }}
-        </div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      {{ if .IsHome }}
+        <h1 class="title">{{ .Content }}</h1>
+      {{ else }}
+        <h1 class="title">{{ .Title }}</h1>
+        {{ if eq .Type "posts" }}
+          <h3 class="subtitle">{{ .Date.Format "Monday, January 2, 2006" }}</h3>
+        {{ end }}
+      {{ end }}
     </div>
+  </div>
 </section>
