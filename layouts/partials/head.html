@@ -6,9 +6,7 @@
     {{ hugo.Generator }}
 
     <title>
-        {{- .Title -}}
-        {{ if not .IsHome }} &middot; {{ end }}
-        {{- .Site.Title -}}
+        {{- .Title }} &middot; {{ .Site.Title -}}
     </title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
