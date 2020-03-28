@@ -8,6 +8,7 @@
   <title>
     {{- .Title }} &middot; {{ .Site.Title -}}
   </title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
+  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
