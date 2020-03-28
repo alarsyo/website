@@ -20,7 +20,7 @@
         <h1 class="title">{{ .Content }}</h1>
       {{ else }}
         <h1 class="title">{{ .Title }}</h1>
-        {{ if eq .Type "posts" }}
+        {{ if eq .Type "blog" }}
           <h3 class="subtitle">{{ .Date.Format "Monday, January 2, 2006" }}</h3>
         {{ end }}
       {{ end }}
