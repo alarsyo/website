@@ -4,19 +4,19 @@
   environment = { HUGO_VERSION = "0.57.2" }
 
 [[redirects]]
-  from = "https://alarsyo.com/*"
-  to = "https://blog.alarsyo.com/:splat"
+  from = "https://blog.alarsyo.com/*"
+  to = "https://alarsyo.com/blog/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://www.alarsyo.com/*"
-  to = "https://blog.alarsyo.com/:splat"
+  to = "https://alarsyo.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "https://about.alarsyo.com/*"
-  to = "https://blog.alarsyo.com/about/"
+  to = "https://alarsyo.com/about/"
   status = 301
   force = true
