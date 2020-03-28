@@ -1,11 +1,11 @@
 {{ define "main" }}
 
     <div class="container">
-    {{ range .Data.Pages }}
-        {{ if eq .Type "posts" }}
+        {{ with .Site.GetPage "section" "posts" }}
+        {{ range .Pages }}
             {{- partial "post-list-item" . -}}
         {{ end }}
-    {{ end }}
+        {{ end }}
     </div>
 
 {{ end }}
