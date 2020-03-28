@@ -5,9 +5,14 @@
 
   {{ hugo.Generator }}
 
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
   <title>
     {{- .Title }} &middot; {{ .Site.Title -}}
   </title>
+
   {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
   {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
