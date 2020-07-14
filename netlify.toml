@@ -2,21 +2,3 @@
   command = "hugo --verbose --minify"
   publish = "public/"
   environment = { HUGO_VERSION = "0.68.3" }
-
-[[redirects]]
-  from = "https://blog.alarsyo.com/*"
-  to = "https://alarsyo.com/blog/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.alarsyo.com/*"
-  to = "https://alarsyo.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://about.alarsyo.com/*"
-  to = "https://alarsyo.com/about/"
-  status = 301
-  force = true
