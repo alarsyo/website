@@ -10,4 +10,4 @@ algorithms, parallel computing, compilers...
 
 I currently write a lot of [Rust](https://rust-lang.org).
 
-You can find [my resume here](https://resume.alarsyo.com/resume.pdf).
+You can find [my resume here](https://resume.alarsyo.net).
