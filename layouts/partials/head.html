@@ -12,4 +12,12 @@
   <title>
     {{- .Title }} &middot; {{ .Site.Title -}}
   </title>
+
+  {{- $styles := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{- if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+  {{ else }}
+    {{- $styles := $styles | minify | fingerprint | resources.PostProcess -}}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
+  {{ end -}}
 </head>
