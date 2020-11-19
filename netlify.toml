@@ -1,4 +1,8 @@
 [build]
-  command = "hugo --verbose --minify"
+  command = "hugo --verbose --minify --gc"
   publish = "public/"
-  environment = { HUGO_VERSION = "0.68.3" }
+
+[build.environment]
+  HUGO_VERSION = "0.78.1"
+  HUGO_ENV = "production"
+  NODE_VERSION="11"
