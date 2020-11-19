@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body>
+  <body class="min-h-screen bg-gray-100">
     {{- partial "header.html" . -}}
-    <section>
+    <section class="max-w-prose mx-auto">
     {{- block "main" . }}{{- end }}
     </section>
     {{- partial "footer.html" . -}}
