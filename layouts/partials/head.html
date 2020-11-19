@@ -12,8 +12,4 @@
   <title>
     {{- .Title }} &middot; {{ .Site.Title -}}
   </title>
-
-  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed") }}
-  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Fingerprint }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
