@@ -1,0 +1,13 @@
+{
+    "name": "alarsyo-website",
+    "version": "0.0.1",
+    "description": "",
+    "repository": "https://github.com/alarsyo/website",
+    "devDependencies": {
+        "autoprefixer": "^10.0.2",
+        "postcss": "^8.1.7",
+        "postcss-cli": "^8.3.0",
+        "tailwindcss": "^2.0.0",
+        "@tailwindcss/typography": "^0.3.1"
+    }
+}
