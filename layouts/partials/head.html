@@ -13,7 +13,7 @@
     {{- .Title }} &middot; {{ .Site.Title -}}
   </title>
 
-  {{- $styles := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{- $styles := resources.Get "css/styles.css" | resources.PostCSS (dict "config" "./postcss.config.js") -}}
   {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
   {{ else }}
