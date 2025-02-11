@@ -17,3 +17,7 @@ pygmentsCodeFences: true
 pygmentsStyle: dracula
 
 enableRobotsTXT: true
+
+permalinks:
+  page:
+    posts: /posts/:year/:month/:slug/

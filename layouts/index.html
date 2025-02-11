@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="container">
-    {{ with .Site.GetPage "section" "blog" }}
+    {{ with .Site.GetPage "section" "posts" }}
     {{ range .Pages }}
       {{- partial "post-list-item" . -}}
     {{ end }}

@@ -2,7 +2,7 @@
 {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
 {{- $pages := slice -}}
 {{- if $.IsHome -}}
-{{- $pages = (.Site.GetPage "section" "blog").Pages -}}
+{{- $pages = (.Site.GetPage "section" "posts").Pages -}}
 {{- else if $.IsSection -}}
 {{- $pages = $pctx.RegularPages -}}
 {{- else -}}
