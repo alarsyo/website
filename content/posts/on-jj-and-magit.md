@@ -9,13 +9,14 @@ a few weeks. This is some kind of "experience report", as well as yet another[^2
 love letter to [Magit](https://emacsair.me/2017/09/01/the-magical-git-interface/).
 
 [^1]: If you don't know what `jj` is, this post is not for you (yet!). [I've put
-    together a list of great resources to learn about it](#know-more-about-jj)
+    together a list of great resources to learn about it](#know-more-about-jj).
     
-[^2]: This is the first I'm writing about it myself, but you can find [magit
+[^2]: This is the first time I'm writing about it myself, but you can find
+    [magit
     appreciation](https://endlessparentheses.com/it-s-magit-and-you-re-the-magician.html)
-    all over the internet
+    all over the internet.
 
-# My background
+## My background
 
 I think I'd classify myself as a `git` power user. I'm sure I don't know
 *everything* about the intricacies about the Git command line interface, but I
@@ -43,6 +44,44 @@ Yes, Magit is *that good*.
 
 [^4]: With Vim bindings, of course. My pinky fingers are fine, thank you very
     much.
+
+
+## Discovering JJ
+
+I've been reading about `jj` through blog posts, tutorials, and [its official
+documentation](https://jj-vcs.github.io). Everything that I read made me want to
+learn more and try it. In no particular order:
+
+- A lot of workflows look simpler than equivalent ones in `git`, so it feels
+  like there a more ways to "officially" use it depending on your preferred
+  mental model
+- I really like the notion of `changeid` being invariant to history rewrites[^5]
+- First-class conflicts are awesome
+- The `git` backend is a must, this is what allows using `jj` transparently in
+  `git` repos, and switching to `jj` full time without bothering your
+  collaborators with your new shiny technology that they don't really want to
+  learn about. This "backwards compatibility" is a key feature, and I believe it
+  is what makes the difference between a cool experiment, like Pijul, and a real
+  path forward.[^6]
+
+[^5]: As opposed to commit ids, which change everytime you rebase a branch or
+    amend a commit.
+
+[^6]: I think the people working on [Oils](https://oils.pub) would also agree
+    here.
+
+So of course I bit the bullet. [A few lines of Nix code
+later](https://git.alarsyo.net/alarsyo/nixos-config/commit/ef67f8f25d17fdb574ea6a4cbe1356c77b3b82fb),
+I was running my first `jj` commands and following along [Steve Klabnik's
+excellent tutorial](https://steveklabnik.github.io/jujutsu-tutorial/). After
+finishing that, I decided that I'd try using it in my "real-world" repositories,
+and forbid myself from using the `git` binary.
+
+And... that's where things went wrong.
+
+## Magit ruined the CLI experience for me
+
+Yeah.
 
 ## Know more about JJ
 
