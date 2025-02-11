@@ -2,3 +2,12 @@
   command = "hugo --buildDrafts --logLevel info --minify"
   publish = "public/"
   environment = { HUGO_VERSION = "0.136.5" }
+
+
+# FIXME: should probably use staging for env, but needs template tweaking to
+# show drafts
+[context.branch-deploy]
+  command = "hugo --environment development --buildDrafts --logLevel info --minify"
+
+[context.deploy-preview.environment]
+  command = "hugo --environment development --buildDrafts --logLevel info --minify"
