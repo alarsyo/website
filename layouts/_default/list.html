@@ -1,5 +1,7 @@
 {{ define "main" }}
-  {{ range .Data.Pages }}
-    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-  {{ end }}
+  <div class="container">
+    {{ range .Data.Pages }}
+      {{- partial "post-list-item" . -}}
+    {{ end }}
+  </div>
 {{ end }}
