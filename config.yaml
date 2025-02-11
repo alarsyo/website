@@ -1,13 +1,17 @@
 baseURL: "https://blog.alarsyo.net/"
 title: "Antoine Martin"
 
-DefaultContentLanguage: en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 
 languages:
   en:
-    lang: en
+    disabled: false
+    languageCode: en-US
     languageName: English
+    languageDirection: ltr
     weight: 1
+
 
 pygmentsCodeFences: true
 pygmentsStyle: dracula
