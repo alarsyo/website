@@ -1,6 +1,6 @@
 {{ if (or (not .Draft) hugo.IsDevelopment) }}
 <div class="box">
-    <h2 class="title"><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+    <h2 class="title"><a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
         {{ if .Draft }}
         <p style="color: red;">DRAFT</p>
         {{ end }}
