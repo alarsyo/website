@@ -23,6 +23,10 @@
         {{ if eq .Type "posts" }}
           <h3 class="subtitle">{{ .Date.Format "Monday, January 2, 2006" }}</h3>
         {{ end }}
+        {{ if .Draft }}
+          <br />
+          <h3 style="color: red;">THIS IS A DRAFT, PLEASE DO NOT SHARE</h3>
+        {{ end }}
       {{ end }}
     </div>
   </div>
