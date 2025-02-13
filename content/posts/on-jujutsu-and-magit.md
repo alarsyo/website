@@ -232,6 +232,12 @@ is a massive UI improvement over the `git` CLI. Anyone that is *not* using a
 superior GUI can probably benefit from switching to `jj` right now, and I
 encourage you to try it!
 
+I'll keep using `jj` in small projects where being able to incrementally build
+up my patches is not as important (for instance, I wrote up this blog post and
+resurrected my blog setup using `jj` for all changes!). That way I can follow
+the development closely, and who knows, maybe I'll end up itching for that Magit
+equivalent so much that I'll start my own little Emacs experiement.
+
 ## Know more about Jujutsu
 
 In case you landed here without knowing what `jj` is, here's a non-exhaustive
