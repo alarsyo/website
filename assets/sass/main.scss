@@ -5,3 +5,7 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 @import "bulma/bulma.sass";
+
+a code {
+    color: purple;
+}
