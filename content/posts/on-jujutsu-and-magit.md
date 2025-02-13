@@ -131,13 +131,13 @@ One of the things I like to do often when writing code is iterating on the patch
    polish, so I go back to step 1, write some more code, test it, stage it,
    rinse and repeat.
 
-With the `git` CLI, that process would be painful, as each staging operation
-would need a call to `git add -up` and its clunky UI[^10], and each "review"
-operation would need calls to `git diff` or `git diff --staged`, depending on if
-I want to look at what's staged already or not. Magit makes it a breeze though,
-displaying both staged and unstaged changes in its main status buffer, and
-allowing to visually select individual lines of hunks for staging. At the press
-of a single `s` key I can stage parts of the code I want.
+With the `git` CLI, that process would be painful. Each staging operation would
+need a call to `git add -up` and its clunky UI[^10], and each "review" operation
+would need calls to `git diff` or `git diff --staged`, depending on if I want to
+look at what's staged already or not. Magit makes it a breeze though! It
+displays both staged and unstaged changes in its main status buffer, and allows
+to visually select individual lines of hunks for staging. At the press of a
+single `s` key I can stage parts of the code I want.
 
 [^10]: I'm complaining about it but I'm glad the option to split up a patch is
     there at all!
@@ -162,12 +162,17 @@ command. [Steve's tutorial has a whole section about
 it](https://steveklabnik.github.io/jujutsu-tutorial/real-world-workflows/the-squash-workflow.html),
 so I'm not going to explain how it works in detail, but in a few words, you can
 use `jj squash -i` to do the equivalent of `git add -p` and selectively move
-some of the changes to the parent[^11] of the working copy. So you have your
-working copy `@` which would be the equivalent of `git`'s working directory in
-this workflow[^12], then you have the change you're actually building, `@-`, the
-parent of your "working directory" change. `git diff` and `git diff --staged`
-are replaced by `jj diff` and `jj diff -r @-`[^13] respectively. In practice it
-looks like this:
+some of the changes to the parent[^11] of the working copy.
+
+So you have:
+
+- Your working copy `@` which would be the equivalent of `git`'s working directory in
+  this workflow[^12]
+- The change you're actually building, `@-`, which is the parent of `@`.
+- `git diff` and `git diff --staged` are replaced by `jj diff` and `jj diff -r
+  @-`[^13] respectively.
+  
+In practice it looks like this:
 
 ```sh
 $ jj
@@ -195,7 +200,7 @@ enables this workflow!
 
 Magit makes a ton of stuff *almost as painless* as they are in `jj`. For
 instance, whenever I need to rewrite some commit history, I'll always go for
-Magit if that's an option: complex history rewriting operations are available
+Magit if that's an option. Complex history rewriting operations are available
 with a few key strokes, and Magit takes care of building the arcane command line
 invocations for you. No more typing `git commit --fixup rev` and `git rebase -i
 --autosquash` by hand, and there's even some very handy shortcuts like the
