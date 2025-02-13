@@ -21,3 +21,8 @@ enableRobotsTXT: true
 permalinks:
   page:
     posts: /posts/:year/:month/:slug/
+
+frontmatter:
+  date:
+    - publishDate
+    - :default
