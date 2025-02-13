@@ -24,7 +24,7 @@
       {{ else }}
         <h1 class="title">{{ .Title }}</h1>
         {{ if (and (eq .Type "posts") .IsPage) }}
-          <h3 class="subtitle">{{ .Date.Format "Monday, January 2, 2006" }}</h3>
+          <h3 class="subtitle">{{ .Date | time.Format ":date_full" }}</h3>
         {{ end }}
         {{ if .Draft }}
           <br />
