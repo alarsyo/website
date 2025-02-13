@@ -151,8 +151,9 @@ check how the patch is looking.
 
 Now, one of the fundamental differences in `jj` is that **there is no staging
 area**. Your working directory is automatically "staged"/snapshotted with every
-`jj` command you run, and there's even [an option]() to snapshot `@` (your
-working copy) on every file modification!
+`jj` command you run, and there's even [an
+option](https://jj-vcs.github.io/jj/v0.26.0/config/#watchman) to snapshot `@`
+(your working copy) on every file modification!
 
 Thankfully, there is a way to get an equivalent workflow. If anything, Jujutsu
 is more flexible in terms of which workflows it allows. The one I'm using is
