@@ -1,7 +1,8 @@
 ---
 title: "On Jujutsu and Magit"
 date: 2025-02-11T14:40:00+01:00
-draft: true
+publishDate: 2025-02-13T21:10:00+01:00
+draft: false
 ---
 
 I'm writing this post after having used [Jujutsu](https://jj-vcs.github.io)[^1] for
