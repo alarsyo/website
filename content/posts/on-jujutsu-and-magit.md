@@ -235,4 +235,5 @@ list of cool resources about it:
 - https://v5.chriskrycho.com/journal/jujutsu-megamerges-and-jj-absorb/
 - https://kubamartin.com/posts/introduction-to-the-jujutsu-vcs/
 - https://ofcr.se/jujutsu-merge-workflow
+- https://neugierig.org/software/blog/2024/12/jujutsu.html
 - https://justinpombrio.net/2025/02/11/jj-cheat-sheet.html
